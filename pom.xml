@@ -97,11 +97,23 @@
       <artifactId>slf4j-log4j12</artifactId>
       <version>1.7.18</version>
     </dependency>
+    <!--如下是针对spring5的日志写法，日志部分切勿照往常写法-->
     <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>1.2.17</version>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-api</artifactId>
+      <version>2.11.1</version>
     </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-core</artifactId>
+      <version>2.11.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.logging.log4j</groupId>
+      <artifactId>log4j-web</artifactId>
+      <version>2.11.1</version>
+    </dependency>
+
     <!--json-->
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
@@ -192,7 +204,7 @@
   </dependencies>
 
   <build>
-    <finalName>kit-admin</finalName>
+    <finalName>ssm_demo</finalName>
     <resources>
       <resource>
         <directory>${basedir}/src/main/resources</directory>
